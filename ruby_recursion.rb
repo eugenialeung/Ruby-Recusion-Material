@@ -37,3 +37,18 @@ def quick_sort(arr)
     right_side = arr[1..-1].select{ |ele| ele >= arr.first }
     quick_sort(left_side) + pivot_arr + quick_sort(right_side)
 end
+
+
+def factorial(n)
+    return 1 if n <= 1
+    n * factorial(n - 1)
+end
+
+
+def iterative_factorial(n)
+    result = 1
+    (1..n).each do |i|
+        result *= i
+    end
+    result
+end
